@@ -1,6 +1,6 @@
 # Workshop: Do Zero ao Primeiro Emprego Tech
 
-Este workshop é composto por **2 módulos principais**, totalmente práticos e focados em preparar novos talentos para o primeiro emprego na área de tecnologia.
+Este workshop é composto por **4 módulos principais**, totalmente práticos e focados em preparar novos talentos para o primeiro emprego na área de tecnologia.
 
 ---
 
