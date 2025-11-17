@@ -1,4 +1,4 @@
-# Exercício 7 — Criar Conta no GitHub e Publicar um Site Automaticamente com Jenkins
+# Exercicios GitHub e Jenkins
 
 ## Objetivo
 Criar uma conta no GitHub, enviar arquivos para um repositório e automatizar a publicação de um site simples usando GitHub Pages e Jenkins.
