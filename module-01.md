@@ -1,4 +1,4 @@
-# Exercícios Iniciais do Workshop: Do Zero ao Primeiro Emprego Tech
+# Exercícios Iniciais 
 
 ## 1. Primeiro Contato com o PowerShell
 ### Objetivo
