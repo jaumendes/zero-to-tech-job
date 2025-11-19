@@ -20,33 +20,30 @@ Criar um fluxo de desenvolvimento semelhante ao usado em equipas reais: branches
 2. Adiciona um ficheiro simples, por exemplo `index.html`.
 3. Faz clone do repositório para tua máquina.
 
-
 ```bash
 git clone https://github.com/jaumendes/zero-to-tech-job.git
 ```
-``` 
 
----
 
 ## 📌 2. Criar e Trabalhar em Branches
 1. Garante que estás na branch `main`:
    ```bash
 git checkout main
-```
+
 2. Cria uma branch de funcionalidade:
    ```bash
 git checkout -b feature/say-hello
-```
+
 3. Edita o `index.html` e adiciona um pequeno texto.
 4. Faz commit com mensagem significativa:
    ```bash
 git add .
 git commit -m "feat: add greeting paragraph"
-```
+
 5. Sobe a branch para o GitHub:
    ```bash
 git push -u origin feature/say-hello
-```
+
 
 ---
 
