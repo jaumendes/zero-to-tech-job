@@ -21,9 +21,10 @@ Criar um fluxo de desenvolvimento semelhante ao usado em equipas reais: branches
 3. Faz clone do repositório para tua máquina.
 
 
-   ```bash
+```bash
 git clone https://github.com/jaumendes/zero-to-tech-job.git
 ```
+``` 
 
 ---
 
