@@ -22,7 +22,7 @@ Criar um fluxo de desenvolvimento semelhante ao usado em equipas reais: branches
 
 
    ```bash
-   https://github.com/jaumendes/zero-to-tech-job.git
+git clone https://github.com/jaumendes/zero-to-tech-job.git
 ```
 
 ---
@@ -30,7 +30,6 @@ Criar um fluxo de desenvolvimento semelhante ao usado em equipas reais: branches
 ## 📌 2. Criar e Trabalhar em Branches
 1. Garante que estás na branch `main`:
    ```bash
-   https://github.com/jaumendes/zero-to-tech-job.git
 git checkout main
 ```
 2. Cria uma branch de funcionalidade:
