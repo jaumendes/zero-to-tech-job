@@ -132,5 +132,4 @@ Este é um fluxo real usado em empresas, perfeito para colocar no portfólio.
 
 ---
 
-Se quiser, posso agora criar **os exercícios completos, passo a passo**, para os módulos 3 e 4.
 
