@@ -19,7 +19,7 @@ New-Item hello.txt
 ```
 4. Criar script:
 ```
-echo "Olá, este é meu primeiro script!" > script.ps1
+'echo "Olá, este é meu primeiro script!"' > script.ps1
 ```
 5. Executar:
 ```
@@ -72,7 +72,20 @@ python --version
 
 ---
 
-## 5. Instalar Jenkins via Chocolatey
+## 5. Instalar Java (Obrigatório para Jenkins)
+
+O Jenkins requer Java para funcionar. Vamos instalar o Temurin OpenJDK 17, versão recomendada.
+
+Instalar Java 17
+```
+choco install temurin17 -y
+```
+Testar:
+```
+java -version
+```
+
+## 6. Instalar Jenkins via Chocolatey
 ```
 choco install jenkins -y
 ```
@@ -89,7 +102,7 @@ http://localhost:8080
 
 ---
 
-## 6. Criar Primeiro Job no Jenkins
+## 7. Criar Primeiro Job no Jenkins
 1. Acessar Jenkins em `http://localhost:8080`
 2. Clicar **New Item**
 3. Nome do projeto: `job-inicial`
@@ -100,6 +113,6 @@ http://localhost:8080
 echo "Rodando meu primeiro job no Jenkins!"
 python --version
 ```
-7. Salvar e clicar **Build Now**
-8. Abrir **Console Output** para ver o resultado
+8. Salvar e clicar **Build Now**
+9. Abrir **Console Output** para ver o resultado
 
