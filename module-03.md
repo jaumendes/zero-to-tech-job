@@ -20,39 +20,44 @@ Criar um fluxo de desenvolvimento semelhante ao usado em equipas reais: branches
 2. Adiciona um ficheiro simples, por exemplo `index.html`.
 3. Faz clone do repositório para tua máquina.
 
-```bash
+```
 git clone https://github.com/jaumendes/zero-to-tech-job.git
 ```
 
 
 ## 📌 2. Criar e Trabalhar em Branches
 1. Garante que estás na branch `main`:
-   ```bash
+   ```
 git checkout main
+```
+
 
 2. Cria uma branch de funcionalidade:
-   ```bash
+```
 git checkout -b feature/say-hello
+```
 
 3. Edita o `index.html` e adiciona um pequeno texto.
 4. Faz commit com mensagem significativa:
-   ```bash
+```
 git add .
 git commit -m "feat: add greeting paragraph"
+```
+
 
 5. Sobe a branch para o GitHub:
-   ```bash
+```
 git push -u origin feature/say-hello
-
+```
 
 ---
 
 ## 📌 3. Configurar Webhook no GitHub
 1. No repositório → **Settings** → **Webhooks** → *Add Webhook*
 2. Em **Payload URL**, coloca:
-   ```
-   http://<JENKINS_URL>/github-webhook/
-   ```
+```
+http://<JENKINS_URL>/github-webhook/
+```
 3. **Content Type:** `application/json`
 4. Seleciona **Just the push event**
 5. Clica **Add Webhook**
@@ -113,14 +118,14 @@ No job do Jenkins:
 2. Vai a **Post-build Actions**
 3. Adiciona um passo (ex.: *Execute Shell*) com um script simples:
 
-```bash
+```
 #!/bin/bash
 # Exemplo de deploy simples para uma pasta pública
 cp -r * /var/www/html/projeto-realista/
 ```
 
 Se preferires usar GitHub Pages:
-```bash
+```
 git checkout gh-pages
 cp -r * .
 git add .
@@ -143,7 +148,7 @@ git push origin gh-pages
 No job → **Post-build Actions** → *Execute Shell* (ou dentro do Jenkinsfile, se estiveres a usar Pipeline).
 
 ### Notificação em caso de sucesso:
-```bash
+```
 curl -X POST -H 'Content-type: application/json' --data "{
   \"text\": \"Deploy realizado com sucesso! Build: ${BUILD_NUMBER}\"
 }" <URL_DO_WEBHOOK_SLACK>
@@ -152,7 +157,7 @@ curl -X POST -H 'Content-type: application/json' --data "{
 ### Notificação em caso de falha:
 Usa a secção de *Post-build* específica para falhas ou um bloco `post { failure {}}` em Jenkinsfile.
 
-```bash
+```
 curl -X POST -H 'Content-type: application/json' --data "{
   \"text\": \"🚨 Deploy falhou! Build: ${BUILD_NUMBER}\"
 }" <URL_DO_WEBHOOK_SLACK>
