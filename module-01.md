@@ -28,25 +28,8 @@ New-Item hello.txt
 
 ---
 
-## 2. Primeiro Programa em Python
-### Objetivo
-Aprender a imprimir texto e ler entrada do usuário.
 
-### Código (hello.py)
-```
-print("Olá! Bem-vindo ao seu primeiro programa Python.")
-nome = input("Qual é o seu nome? ")
-print("Prazer em te conhecer, " + nome + "!")
-```
-
-### Executar
-```
-python hello.py
-```
-
----
-
-## 3. Instalar Chocolatey
+## 2. Instalar Chocolatey
 ### Comando
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; \
@@ -61,13 +44,34 @@ choco --version
 
 ---
 
-## 4. Instalar Python 3 via Chocolatey
+
+
+## 3. Instalar Python 3 via Chocolatey
 ```
 choco install python -y
 ```
 Testar:
 ```
 python --version
+```
+
+---
+
+
+## 4. Primeiro Programa em Python
+### Objetivo
+Aprender a imprimir texto e ler entrada do usuário.
+
+### Código (hello.py)
+```
+print("Olá! Bem-vindo ao seu primeiro programa Python.")
+nome = input("Qual é o seu nome? ")
+print("Prazer em te conhecer, " + nome + "!")
+```
+
+### Executar
+```
+python hello.py
 ```
 
 ---
@@ -112,12 +116,12 @@ C:\Program Files\Java\jdk1.8*
 
 ### ✔️ Definir JAVA_HOME (PowerShell como administrador)
 ```
-setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17" 
+setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17" /M
 ```
 
 ### ✔️ Adicionar o bin ao PATH
 ```
-setx PATH "$env:PATH;$env:JAVA_HOME\bin" 
+setx PATH "$env:PATH;$env:JAVA_HOME\bin" /M
 ```
 
 ### ✔️ Testar - Abre novo terminal powershell e verifica que agora já devolve o JAVA_HOME corretamente.
