@@ -120,17 +120,13 @@ setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17" /M
 setx PATH "$env:PATH;$env:JAVA_HOME\bin" /M
 ```
 
-### ✔️ Testar
+### ✔️ Testar - Abre novo terminal powershell e verifica que agora já devolve o JAVA_HOME corretamente.
+
 ```
 echo $env:JAVA_HOME
 java -version
 ```
 
-Agora você pode instalar o Jenkins normalmente:
-
-```
-choco install jenkins -y
-```
 
 
 ## 6. Instalar Jenkins via Chocolatey
