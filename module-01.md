@@ -85,6 +85,54 @@ Testar:
 java -version
 ```
 
+## 5.1. Corrigir Erro de JAVA_HOME ao Instalar o Jenkins
+
+Se durante a instalação do Jenkins via Chocolatey aparecer o erro:
+
+```
+JAVA_HOME is not set and no 'java' command could be found in your PATH
+```
+
+significa que o Java está instalado, mas a variável de ambiente **JAVA_HOME** não foi configurada.
+
+### ✔️ Verificar Java Instalado
+```
+java -version
+```
+
+### ✔️ Verificar onde o Java está instalado
+Normalmente em:
+```
+C:\Program Files\Eclipse Adoptium\jdk-17*
+```
+ou  
+```
+C:\Program Files\Java\jdk1.8*
+```
+
+### ✔️ Definir JAVA_HOME (PowerShell como administrador)
+```
+setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17" /M
+```
+
+### ✔️ Adicionar o bin ao PATH
+```
+setx PATH "$env:PATH;$env:JAVA_HOME\bin" /M
+```
+
+### ✔️ Testar
+```
+echo $env:JAVA_HOME
+java -version
+```
+
+Agora você pode instalar o Jenkins normalmente:
+
+```
+choco install jenkins -y
+```
+
+
 ## 6. Instalar Jenkins via Chocolatey
 ```
 choco install jenkins -y
