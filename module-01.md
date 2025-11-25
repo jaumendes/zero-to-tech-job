@@ -112,12 +112,12 @@ C:\Program Files\Java\jdk1.8*
 
 ### ✔️ Definir JAVA_HOME (PowerShell como administrador)
 ```
-setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17" /M
+setx JAVA_HOME "C:\Program Files\Eclipse Adoptium\jdk-17" 
 ```
 
 ### ✔️ Adicionar o bin ao PATH
 ```
-setx PATH "$env:PATH;$env:JAVA_HOME\bin" /M
+setx PATH "$env:PATH;$env:JAVA_HOME\bin" 
 ```
 
 ### ✔️ Testar - Abre novo terminal powershell e verifica que agora já devolve o JAVA_HOME corretamente.
