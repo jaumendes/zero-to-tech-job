@@ -64,14 +64,6 @@ No final dos 2 módulos, o aluno terá:
 
 Este é o primeiro passo para o primeiro emprego tech.
 
----
-
-Se quiser, posso agora criar um **módulo final extra (opcional)** com:
-- Docker
-- Bots para Slack/Discord
-- Pipelines completas CI/CD
-- Projeto final para portfólio.
-
 
 ---
 
